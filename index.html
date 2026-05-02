@@ -1,86 +1,690 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Sarfaraj portfolio website showcasing responsive web development, data analysis, dashboards, featured projects, testimonials, and contact details."
+    >
 
-        <!--==================== UNICONS ====================-->
-        
-        
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 
-        <title>Responsive Portfolio Website</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            
-        </header>
+    <title>Sarfaraj | Web Developer & Data Analyst</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">Sarfaraj</a>
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                
-            </section>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#skills" class="nav__link">Skills</a></li>
+                    <li><a href="#qualification" class="nav__link">Journey</a></li>
+                    <li><a href="#services" class="nav__link">Services</a></li>
+                    <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
 
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                
-            </section>
+                <button class="nav__close" id="nav-close" type="button" aria-label="Close navigation">
+                    Close
+                </button>
+            </div>
 
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
+            <div class="nav__actions">
+                <button class="theme-button" id="theme-button" type="button" aria-label="Toggle theme">
+                    Dark mode
+                </button>
+                <button class="nav__toggle" id="nav-toggle" type="button" aria-label="Open navigation">
+                    Menu
+                </button>
+            </div>
+        </nav>
+    </header>
 
-            </section>
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home__bg"></div>
+            <div class="home__container container grid">
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/sarfaraj91" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <!-- <a href="https://dribbble.com/" target="_blank" rel="noreferrer">Dribbble</a> -->
+                    <a href="https://github.com/sarfraj91/" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
 
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
+                <div class="home__visual">
+                    <div class="home__blob">
+                        <img src="./assets/img/perfil.png" alt="Sarfaraj portrait">
+                    </div>
+                </div>
 
-            </section>
+                <div class="home__data">
+                    <span class="home__greeting">Full-stack web builder with a data-first mindset</span>
+                    <h1 class="home__title">Hi, I am Sarfaraj</h1>
+                    <h2 class="home__subtitle">Web Developer and Data Analyst</h2>
+                    <p class="home__description">
+                        I build responsive websites, interactive dashboards, and analytics-driven solutions that turn ideas and raw data into clear results.
+                    </p>
 
-            <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
-                
-            </section>
+                    <div class="home__buttons">
+                        <a href="#contact" class="button">Start a project</a>
+                        <a href="./assets/pdf/Sarfaraj_resume_SoftwareDeveloper.pdf" class="button button--ghost" target="_blank" rel="noreferrer">
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                
-            </section>
+        <section class="about section" id="about">
+            <span class="section__subtitle">My intro</span>
+            <h2 class="section__title">About Me</h2>
 
-            <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
+            <div class="about__container container grid">
+                <div class="about__image-wrap">
+                    <img src="./assets/img/sarfarajPic2.jpeg" alt="Sarfaraj working on a project" class="about__img">
+                </div>
 
-            </section>
+                <div class="about__data">
+                    <p class="about__description">
+                        I work at the intersection of web development and data analysis, building fast interfaces,
+                        meaningful dashboards, and reporting flows that help businesses understand both users and numbers.
+                    </p>
 
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
-                
-            </section>
+                    <div class="about__info">
+                        <article class="about__card">
+                            <h3>02+</h3>
+                            <span>Years building modern web solutions</span>
+                        </article>
+                        <article class="about__card">
+                            <h3>15+</h3>
+                            <span>Projects across websites and analytics</span>
+                        </article>
+                        <article class="about__card">
+                            <h3>10+</h3>
+                            <span>Dashboards, reports, and automation workflows</span>
+                        </article>
+                    </div>
 
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
+                    <a href="#contact" class="button">Let’s talk</a>
+                </div>
+            </div>
+        </section>
 
-            </section>
-        </main>
+        <section class="skills section" id="skills">
+            <span class="section__subtitle">What I use</span>
+            <h2 class="section__title">Skills</h2>
 
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-         
-        </footer>
-        
-        <!--==================== SCROLL TOP ====================-->
-        
+            <div class="skills__container container grid">
+                <article class="skills__content skills__open">
+                    <button class="skills__header" type="button">
+                        <div>
+                            <h3 class="skills__title">Web Development</h3>
+                            <span class="skills__subtitle">Responsive interfaces, performance, and real user flow</span>
+                        </div>
+                        <span class="skills__toggle">Open</span>
+                    </button>
 
-        <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
+                    <div class="skills__list">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h4>HTML</h4>
+                                <span>95%</span>
+                            </div>
+                            <div class="skills__bar"><span style="width: 95%"></span></div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h4>CSS</h4>
+                                <span>90%</span>
+                            </div>
+                            <div class="skills__bar"><span style="width: 90%"></span></div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h4>JavaScript</h4>
+                                <span>85%</span>
+                            </div>
+                            <div class="skills__bar"><span style="width: 85%"></span></div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h4>React</h4>
+                                <span>75%</span>
+                            </div>
+                            <div class="skills__bar"><span style="width: 80%"></span></div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h4>Node.js</h4>
+                                <span>76%</span>
+                            </div>
+                            <div class="skills__bar"><span style="width: 76%"></span></div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h4>Express.js</h4>
+                                <span>75%</span>
+                            </div>
+                            <div class="skills__bar"><span style="width: 75%"></span></div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h4>Django</h4>
+                                <span>50%</span>
+                            </div>
+                            <div class="skills__bar"><span style="width: 50%"></span></div>
+                        </div>
+                    </div>
+                </article>
 
-        <!--==================== MAIN JS ====================-->
-        <script src=""></script>
-    </body>
+                <article class="skills__content skills__close">
+                    <button class="skills__header" type="button">
+                        <div>
+                            <h3 class="skills__title">Data Analysis</h3>
+                            <span class="skills__subtitle">Cleaning, querying, visualizing, and explaining data</span>
+                        </div>
+                        <span class="skills__toggle">Open</span>
+                    </button>
+
+                    <div class="skills__list">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h4>Python</h4>
+                                <span>88%</span>
+                            </div>
+                            <div class="skills__bar"><span style="width: 88%"></span></div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h4>SQL</h4>
+                                <span>84%</span>
+                            </div>
+                            <div class="skills__bar"><span style="width: 84%"></span></div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h4>Power BI</h4>
+                                <span>86%</span>
+                            </div>
+                            <div class="skills__bar"><span style="width: 86%"></span></div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h4>Excel</h4>
+                                <span>92%</span>
+                            </div>
+                            <div class="skills__bar"><span style="width: 92%"></span></div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h4>Pandas</h4>
+                                <span>82%</span>
+                            </div>
+                            <div class="skills__bar"><span style="width: 82%"></span></div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h4>NumPy</h4>
+                                <span>70%</span>
+                            </div>
+                            <div class="skills__bar"><span style="width: 70%"></span></div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h4>Matplotlib</h4>
+                                <span>70%</span>
+                            </div>
+                            <div class="skills__bar"><span style="width: 70%"></span></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="skills__content skills__close">
+                    <button class="skills__header" type="button">
+                        <div>
+                            <h3 class="skills__title">Tools and Delivery</h3>
+                            <span class="skills__subtitle">Version control, visualization, APIs, and quality checks</span>
+                        </div>
+                        <span class="skills__toggle">Open</span>
+                    </button>
+
+                    <div class="skills__list">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h4>Git and GitHub</h4>
+                                <span>84%</span>
+                            </div>
+                            <div class="skills__bar"><span style="width: 84%"></span></div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h4>Data Visualization</h4>
+                                <span>90%</span>
+                            </div>
+                            <div class="skills__bar"><span style="width: 90%"></span></div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h4>API Integration</h4>
+                                <span>78%</span>
+                            </div>
+                            <div class="skills__bar"><span style="width: 78%"></span></div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h4>Responsive QA</h4>
+                                <span>89%</span>
+                            </div>
+                            <div class="skills__bar"><span style="width: 89%"></span></div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h4>Dashboard Storytelling</h4>
+                                <span>87%</span>
+                            </div>
+                            <div class="skills__bar"><span style="width: 87%"></span></div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h4>Data Preprocessing</h4>
+                                <span>87%</span>
+                            </div>
+                            <div class="skills__bar"><span style="width: 70%"></span></div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="qualification section" id="qualification">
+            <span class="section__subtitle">My path</span>
+            <h2 class="section__title">Qualification</h2>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <button class="qualification__button qualification__active" type="button" data-target="#education">
+                        Education
+                    </button>
+                    <button class="qualification__button" type="button" data-target="#work">
+                        Work
+                    </button>
+                </div>
+
+                <div class="qualification__sections">
+                    <div class="qualification__content qualification__active" data-content id="education">
+                        <article class="qualification__item">
+                            <span class="qualification__marker"></span>
+                            <div>
+                                <h3>Bachelor in Computer Science</h3>
+                                <span>Computer Science Foundation</span>
+                                <p>2023 - 2027</p>
+                            </div>
+                        </article>
+                        <article class="qualification__item">
+                            <span class="qualification__marker"></span>
+                            <div>
+                                <h3>Web Development Certification</h3>
+                                <span>Frontend and JavaScript Specialization</span>
+                                <p>2024 - 2025</p>
+                            </div>
+                        </article>
+                        <article class="qualification__item">
+                            <span class="qualification__marker"></span>
+                            <div>
+                                <h3>Data Analytics Training</h3>
+                                <span>SQL, Excel, Python, and BI Reporting</span>
+                                <p>2024 - 2025</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="qualification__content" data-content id="work">
+                        <article class="qualification__item">
+                            <span class="qualification__marker"></span>
+                            <div>
+                                <h3>Web Developer</h3>
+                                <span>Agency and freelance websites</span>
+                                <p>2025 - Present</p>
+                            </div>
+                        </article>
+                        <article class="qualification__item">
+                            <span class="qualification__marker"></span>
+                            <div>
+                                <h3>Data Analyst</h3>
+                                <span>Dashboarding, reporting, and data cleaning</span>
+                                <p>2023 - 2025</p>
+                            </div>
+                        </article>
+                        <article class="qualification__item">
+                            <span class="qualification__marker"></span>
+                            <div>
+                                <h3>Freelance Web and Analytics Partner</h3>
+                                <span>Business websites, dashboards, and insights</span>
+                                <p>2025 - Present</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services section" id="services">
+            <span class="section__subtitle">What I offer</span>
+            <h2 class="section__title">Services</h2>
+
+            <div class="services__container container grid">
+                <article class="services__card">
+                    <span class="services__tag">01</span>
+                    <h3>Responsive Web Development</h3>
+                    <p>I create modern websites and landing pages that are fast, mobile-ready, and conversion-focused.</p>
+                    <button class="button button--ghost services__button" type="button" data-modal="0">
+                        View more
+                    </button>
+                </article>
+
+                <article class="services__card">
+                    <span class="services__tag">02</span>
+                    <h3>Dashboard and Data Analysis</h3>
+                    <p>I clean datasets, build dashboards, and translate metrics into practical business decisions.</p>
+                    <button class="button button--ghost services__button" type="button" data-modal="1">
+                        View more
+                    </button>
+                </article>
+
+                <article class="services__card">
+                    <span class="services__tag">03</span>
+                    <h3>Reporting Automation</h3>
+                    <p>I streamline repetitive reporting work with connected spreadsheets, APIs, and reusable workflows.</p>
+                    <button class="button button--ghost services__button" type="button" data-modal="2">
+                        View more
+                    </button>
+                </article>
+            </div>
+
+            <div class="services__modals">
+                <div class="services__modal">
+                    <div class="services__modal-content">
+                        <button class="services__modal-close" type="button" aria-label="Close service details">
+                            Close
+                        </button>
+                        <h3>Responsive Web Development</h3>
+                        <p>I build websites that look polished, perform well, and support real business goals.</p>
+                        <ul>
+                            <li>Business websites and personal portfolios.</li>
+                            <li>Responsive layouts for desktop, tablet, and mobile.</li>
+                            <li>Clean UI interactions, forms, and landing page sections.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="services__modal">
+                    <div class="services__modal-content">
+                        <button class="services__modal-close" type="button" aria-label="Close service details">
+                            Close
+                        </button>
+                        <h3>Dashboard and Data Analysis</h3>
+                        <p>I turn raw data into dashboards and reports that are easier to understand and act on.</p>
+                        <ul>
+                            <li>SQL queries, Excel analysis, and Python data cleaning.</li>
+                            <li>Interactive KPI dashboards in Power BI and spreadsheet workflows.</li>
+                            <li>Trend analysis, summaries, and business insight storytelling.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="services__modal">
+                    <div class="services__modal-content">
+                        <button class="services__modal-close" type="button" aria-label="Close service details">
+                            Close
+                        </button>
+                        <h3>Reporting Automation</h3>
+                        <p>I reduce manual reporting time with structured processes and automation-friendly outputs.</p>
+                        <ul>
+                            <li>Automated dashboards and recurring status reports.</li>
+                            <li>Data formatting pipelines for cleaner decision-making.</li>
+                            <li>Integrated workflows between forms, sheets, and reports.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio section" id="portfolio">
+            <span class="section__subtitle">My recent work</span>
+            <h2 class="section__title">Portfolio</h2>
+
+            <div class="portfolio__container container swiper">
+                <div class="swiper-wrapper">
+                    <article class="portfolio__content swiper-slide">
+                        <img src="./assets/img/portfolio1.jpg" alt="Personal brand portfolio website" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <span class="portfolio__type">Web Development</span>
+                            <h3>Personal Brand Portfolio</h3>
+                            <p>A responsive portfolio website designed to showcase services, case studies, and contact flow with clear calls to action.</p>
+                            <div class="portfolio__stack">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <a href="#contact" class="button button--small">Build something similar</a>
+                        </div>
+                    </article>
+
+                    <article class="portfolio__content swiper-slide">
+                        <img src="./assets/img/portfolio2.jpg" alt="E-commerce analytics dashboard" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <span class="portfolio__type">Data Analysis</span>
+                            <h3>E-commerce Sales Dashboard</h3>
+                            <p>An interactive dashboard tracking revenue, top products, customer trends, and monthly growth to support faster decisions.</p>
+                            <div class="portfolio__stack">
+                                <span>Power BI</span>
+                                <span>Excel</span>
+                                <span>SQL</span>
+                            </div>
+                            <a href="#contact" class="button button--small">Discuss this dashboard</a>
+                        </div>
+                    </article>
+
+                    <article class="portfolio__content swiper-slide">
+                        <img src="./assets/img/portfolio3.jpg" alt="Restaurant website landing page" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <span class="portfolio__type">Web Development</span>
+                            <h3>Restaurant Ordering Landing Page</h3>
+                            <p>A conversion-focused website featuring a visual menu, offer sections, contact CTA, and mobile-first browsing experience.</p>
+                            <div class="portfolio__stack">
+                                <span>Responsive UI</span>
+                                <span>Animations</span>
+                                <span>Lead Capture</span>
+                            </div>
+                            <a href="#contact" class="button button--small">Start a launch page</a>
+                        </div>
+                    </article>
+
+                    <article class="portfolio__content swiper-slide">
+                        <img src="./assets/img/portfolio2.jpg" alt="HR analytics dashboard" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <span class="portfolio__type">Data Analysis</span>
+                            <h3>HR Attrition Insight Dashboard</h3>
+                            <p>A people analytics report that highlights attrition patterns, department risk, and retention indicators through filtered visuals.</p>
+                            <div class="portfolio__stack">
+                                <span>Power BI</span>
+                                <span>Python</span>
+                                <span>Pandas</span>
+                            </div>
+                            <a href="#contact" class="button button--small">Explore analytics work</a>
+                        </div>
+                    </article>
+
+                    <article class="portfolio__content swiper-slide">
+                        <img src="./assets/img/portfolio1.jpg" alt="Task management web app" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <span class="portfolio__type">Full Web App</span>
+                            <h3>Task Management Web App</h3>
+                            <p>A productivity app concept with task cards, status flow, reusable components, and clean interaction states for teams.</p>
+                            <div class="portfolio__stack">
+                                <span>JavaScript</span>
+                                <span>React</span>
+                                <span>API Ready</span>
+                            </div>
+                            <a href="#contact" class="button button--small">Build a custom app</a>
+                        </div>
+                    </article>
+
+                    <article class="portfolio__content swiper-slide">
+                        <img src="./assets/img/portfolio3.jpg" alt="Student result analysis project" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <span class="portfolio__type">Academic Analytics</span>
+                            <h3>Student Result Analysis System</h3>
+                            <p>A reporting project for comparing performance by subject, class, and department with simplified summaries for educators.</p>
+                            <div class="portfolio__stack">
+                                <span>Excel</span>
+                                <span>SQL</span>
+                                <span>Visualization</span>
+                            </div>
+                            <a href="#contact" class="button button--small">Create a reporting system</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="swiper-button-next portfolio__button-next">Next</div>
+                <div class="swiper-button-prev portfolio__button-prev">Prev</div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="project section">
+            <div class="project__container container grid">
+                <div class="project__data">
+                    <span class="section__subtitle project__subtitle">Project in mind</span>
+                    <h2 class="section__title project__title">Need a website or dashboard that actually supports decisions?</h2>
+                    <p class="project__description">
+                        I can help with business websites, analytics dashboards, reporting flows, and interactive frontend experiences built around clarity and performance.
+                    </p>
+                    <a href="#contact" class="button">Contact me</a>
+                </div>
+
+                <div class="project__image-wrap">
+                    <img src="./assets/img/project.png" alt="Project collaboration illustration" class="project__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="testimonial section">
+            <span class="section__subtitle">Client voice</span>
+            <h2 class="section__title">Testimonials</h2>
+
+            <div class="testimonial__container container swiper">
+                <div class="swiper-wrapper">
+                    <article class="testimonial__card swiper-slide">
+                        <img src="./assets/img/testimonial1.jpg" alt="Client from a retail business" class="testimonial__img">
+                        <h3>Maria Khan</h3>
+                        <span>Retail Operations Manager</span>
+                        <p>
+                            The website redesign improved our online presentation, and the dashboard made weekly performance review much easier for the whole team.
+                        </p>
+                    </article>
+
+                    <article class="testimonial__card swiper-slide">
+                        <img src="./assets/img/testimonial2.jpg" alt="Client from a startup company" class="testimonial__img">
+                        <h3>John Patel</h3>
+                        <span>Startup Founder</span>
+                        <p>
+                            Sarfaraj translated our rough idea into a polished web experience and backed it up with useful reporting on what users were doing.
+                        </p>
+                    </article>
+
+                    <article class="testimonial__card swiper-slide">
+                        <img src="./assets/img/testimonial3.jpg" alt="Client from an education team" class="testimonial__img">
+                        <h3>Sophie Roy</h3>
+                        <span>Education Program Lead</span>
+                        <p>
+                            The reporting workflow saved manual effort, and the visual summaries helped us explain student performance clearly to stakeholders.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="swiper-pagination testimonial__pagination"></div>
+            </div>
+        </section> -->
+
+        <section class="contact section" id="contact">
+            <span class="section__subtitle">Get in touch</span>
+            <h2 class="section__title">Contact Me</h2>
+
+            <div class="contact__container container grid">
+                <div class="contact__info">
+                    <article class="contact__card">
+                        <h3>Email</h3>
+                        <span>sarfaraj911749@gmail.com</span>
+                        <a href="mailto:sarfaraj911749@gmail.com">Write me</a>
+                    </article>
+                    <article class="contact__card">
+                        <h3>WhatsApp</h3>
+                        <span>+91 7061609072</span>
+                        <a href="https://wa.me/917061609072" target="_blank" rel="noreferrer">Message me</a>
+                    </article>
+                    <article class="contact__card">
+                        <h3>LinkedIn</h3>
+                        <span>Professional profile</span>
+                        <a href="https://www.linkedin.com/in/sarfaraj91" target="_blank" rel="noreferrer">Connect now</a>
+                    </article>
+                </div>
+
+                <form class="contact__form" action="mailto:sarfaraj911749@gmail.com" method="post" enctype="text/plain">
+                    <div class="contact__form-grid">
+                        <label class="contact__label">
+                            <span>Name</span>
+                            <input type="text" name="name" placeholder="Your name" required>
+                        </label>
+                        <label class="contact__label">
+                            <span>Email</span>
+                            <input type="email" name="email" placeholder="Your email" required>
+                        </label>
+                    </div>
+                    <label class="contact__label">
+                        <span>Project</span>
+                        <input type="text" name="project" placeholder="What are you building?" required>
+                    </label>
+                    <label class="contact__label">
+                        <span>Message</span>
+                        <textarea name="message" rows="6" placeholder="Tell me about your goals" required></textarea>
+                    </label>
+
+                    <button class="button" type="submit">Send message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div>
+                <h2 class="footer__title">Sarfaraj</h2>
+                <span class="footer__subtitle">Web Developer and Data Analyst</span>
+            </div>
+
+            <ul class="footer__links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="footer__socials">
+                <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">Facebook</a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+                <a href="https://twitter.com/" target="_blank" rel="noreferrer">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home" class="scrollup" id="scroll-up" aria-label="Scroll to top">Top</a>
+
+    <script src="./assets/js/swiper-bundle.min.js" defer></script>
+    <script src="./assets/js/main.js" defer></script>
+    <script src="./index.js" defer></script>
+</body>
 </html>
